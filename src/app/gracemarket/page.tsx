@@ -8,26 +8,29 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <div className="flex-col-2 ">
-
+    <div class="justify-evenly">
     <p className="sale">70% sale</p>
 
    <div className="distance flex flex-col ">
 <h1 className="scroll-m-20 text-5xl font-extrabold  ">
 
-<div className="roundbox">
-
-  </div>
 
 An Industrial <br/> Take on <br/> Streetwear
     </h1>
     <br/>
     <p>Anyone can beat you  but no one can<br/>  beat your outfit as long as you wear<br/> Dine outfits</p>
   <br/>
+  <div>
+  <Image
+      src="/mainpic.png"
+      width={500}
+      height={500}
+      alt="Picture of the lady "
+    />
+  </div>
 
 
 </div>
-
 
 <p className="cart">start shopping</p>
    </div>
@@ -45,44 +48,20 @@ An Industrial <br/> Take on <br/> Streetwear
 <div className="container grid justify-evenly sm:grid-cols-3 mt-6">
 <div className="sm:grid-row-2">
   <div className="longboxroo">
-Get Upto <br/>
-60% Off <br/>
-for the summer season
+
   </div>
 <br/>
   <div className="longboxrootwo">
 
-    Get Upto 60% OFF
-
-
 </div>
 
 </div>
-<div className="subscrtwo margin-x-200px">
- 
-<Image
-       src="/meninbluet.png"
-       width={500}
-       height={500}
-       alt="Picture of the men in flex push button bomber"
-     />
-
-
-</div>
-
 <div className="subscrtwo">
-  <br/>
-  Flex button Bomber
-  <br/>
- 
-  Now $190.00
-       <Image
-       src="/male1.png"
-       width={500}
-       height={700}
-       alt="Picture of the men in flex push button bomber"
-     />
-  </div>
+
+</div>
+
+
+
 </div>
 
 

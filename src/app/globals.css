@@ -16,12 +16,143 @@
   }
 }
 
+@layer components {
+p{
+  @apply text-xl text-muted-foreground;
+}
+.roundbox {
+  width: 400px;
+  height: 400px; 
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 550px;
+  background-color: pink;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.distance{
+margin-left:150px;
+margin-top: 60px;
+}
+.sale{
+  margin-left:150px;
+margin-top: 40px;
+background-color: rgb(139, 202, 238);
+font-size: larger;
+text-decoration: #0e76ff;
+max-width: 10%;
+max-height: 10%;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-content: space-between;
+}
+.cart{
+  
+  background-color: black;
+  width:120px;
+  height:70px;
+text-decoration-color: white;
+}
+.container {
+  max-width:1100px;
+  height:350px;
+  margin-left: 120px;
+}
+.subscription {
+  background-color: #ccc;
+  max-width: 650px;
+  height: 150px;
+}
+.subscrtwo {
+  background-color: #ccc;
+  width: 250px;
+  height: 325px;
+}
+.longboxroo {
+  background-color: #ccc;
+  width: 450px;
+  height: 150px;
+}
+.longboxrootwo {
+  background-color:black;
+  width: 450px;
+  height: 150px;
+}
+
+
+
+.subscrthree {
+  background-color: #ccc;
+max-width: 420px;
+height: 230px;
+}
+.containeronzoo:hover{
+  max-width:1200px;
+  height:400px;
+  transform: scale(1.1);
+}
+.containersec {
+max-width: 1xl;
+height:700px;
+}
+.sub{
+  background-color:rgba(218, 216, 216, 0.842);
+  height:230px;
+}
+.  .containerthird {
+  @apply max-w-7xl mx-auto p-8;
+}
+.contextt{
+  font-family:'Courier New';
+
+}
+.subone{
+  background-color:rgba(223, 222, 222, 0.842);
+}
+.subtwo{
+  background-color:rgba(247, 241, 241, 0.925);
+}
+.subthree{
+  background-color:rgba(223, 222, 222, 0.842);
+}
+.picdowntxt{
+@apply font-bold mt-2;
+}
+.sticky-footer {
+  position: fixed;
+}
+
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
+
     rgb(var(--background-start-rgb));
 }
+
+body::before {
+  content: "Different from others";
+  position: absolute;
+  top: 1820px; 
+  left: 40.5%; 
+  transform: translate(-50%, -3%); 
+  font-size: 82px; 
+  font-weight: bold; 
+  color: rgb(212, 212, 212);
+  z-index: -1;
+ 
+}
+main {
+  flex: 1;
+}
+
+footer {
+margin-top: auto;
+}
+
