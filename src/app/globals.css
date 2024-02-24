@@ -21,8 +21,9 @@ p{
   @apply text-xl text-muted-foreground;
 }
 .roundbox {
-  width: 400px;
-  height: 400px; 
+  position: absolute;
+  top: 0;
+   
   border-radius: 50%;
   border: 1px solid #ccc;
   margin-left: 550px;
@@ -120,27 +121,86 @@ height:700px;
 .sticky-footer {
   position: fixed;
 }
+.textfont {
+  font-size: 20px;
+}
+
+.textfont strong {
+  font-weight: bold;
+  font-size: 24px; /* You can adjust the size as needed */
+}
+.longboxrootwo {
+  font-size: 18px;
+}
+
+.longboxrootwo {
+  font-size: 18px;
+}
+
+.longboxrootwo span.percent-off {
+  color: white;
+  font-weight: bold;
+  text-size:18px;
+  background-color: #505550; /* You can use any color for the background */
+  padding: 5px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.longboxrootwo span.promo-code {
+  color: white; /* Set the text color to white */
+}
+
+
+
+.relative {
+  position: relative;
+}
+
+
+
+.flex-col-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-m-20 {
+  margin-top: 20px;
+}
+
+.font-extrabold {
+  font-weight: bold;
+}
+
+
+
+
 
 }
 
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */
+  margin: 0; /* Remove default margin */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-
-    rgb(var(--background-start-rgb));
+    to bottom,
+    hsl(0, 0%, 100%),
+    rgb(var(--background-end-rgb)),
+    rgb(var(--background-start-rgb))
+  );
 }
+
+footer {
+  margin-top: auto;
+}
+
 
 body::before {
   content: "Different from others";
   position: absolute;
-  top: 1820px; 
-  left: 40.5%; 
+  top: 1920px; 
+  left: 35.5%; 
   transform: translate(-50%, -3%); 
   font-size: 82px; 
   font-weight: bold; 
@@ -150,9 +210,5 @@ body::before {
 }
 main {
   flex: 1;
-}
-
-footer {
-margin-top: auto;
 }
 

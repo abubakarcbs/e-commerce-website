@@ -28,10 +28,11 @@ export default function RootLayout({
   <h1 className="scroll-m-20 text-2xl font-bold padding-Top 20px">
      <Link href="gracemarket">Grace Market</Link>
     </h1>
+    <h2 className="flex justify-between gap-14">
     <Link href="female">Female</Link>
     <Link href="male">Male</Link>
     <Link href="#Kids">Kids</Link>
-    <Link href="#All Products">All Producs</Link>
+    <Link href="#allproducts">All Producs</Link></h2>
     <div className="mt-1 border-round">
     <Input type="email" placeholder="what are you looking for"/>
 </div>
